@@ -8,8 +8,8 @@ function main() {
     var chosenParams = [$('#param-one').val(), $('#param-two').val(), $('#param-three').val()] 
     var output = choose(chosenParams[0])
 
-    output += `&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;${choose(chosenParams[1])}`
-    output += `&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;${choose(chosenParams[2])}`
+    output += `&#32;&#32;&#32;-&#32;&#32;&#32;${choose(chosenParams[1])}`
+    output += `&#32;&#32;&#32;-&#32;&#32;&#32;${choose(chosenParams[2])}`
 
     $('.output-container').html(output)
     document.querySelector('.output-container').style.opacity = 1
