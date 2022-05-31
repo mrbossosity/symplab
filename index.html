@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="./variables.js"></script>
+    <script defer src="./index.js"></script>
+    <title>SympLab</title>
+</head>
+<body>
+    <div class="background">SympLab</div>
+    <div class="top-container">
+        <div class="output-container">Keep it fresh!</div>
+    </div>
+    <div class="bottom-container">
+        <div class="params-container">
+            <div>
+                <select name="param-one" id="param-one">
+                    <option value="0">Restriction</option>
+                    <option value="1" selected>Texture</option>
+                    <option value="2">Shape</option>
+                    <option value="3">Move</option>
+                </select>
+                <span class="plus">+</span>
+                <select name="param-two" id="param-two">
+                    <option value="0">Restriction</option>
+                    <option value="1">Texture</option>
+                    <option value="2" selected>Shape</option>
+                    <option value="3">Move</option>
+                </select>
+                <span class="plus">+</span>
+                <select name="param-three" id="param-three">
+                    <option value="0">Restriction</option>
+                    <option value="1">Texture</option>
+                    <option value="2">Shape</option>
+                    <option value="3" selected>Move</option>
+                </select>    
+            </div>
+            <div>
+                <button class="go-button" onclick="go()">Keep it fresh!</button>
+            </div>
+        </div>
+        <div class="info-footer">Combine random textures, restrictions, shapes, and moves to inspire new flows and variations!</div>
+    </div>
+</body>
+</html>
