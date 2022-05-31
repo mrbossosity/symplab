@@ -70,11 +70,11 @@ select {
 
 .go-button:hover {
     background-color: dodgerblue;
-    box-shadow: none
 }
 
 .go-button:active {
     background-color: violet;
+    box-shadow: none;
     transform: translateY(3px);
 }
 

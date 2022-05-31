@@ -1,12 +1,15 @@
 function choose(param) {
     let arr = params[param]
-    return arr[Math.floor(Math.random() * arr.length)];    
+    let choice =  arr[Math.floor(Math.random() * arr.length)];
+    return choice
 }
 
 function main() {
     var chosenParams = [$('#param-one').val(), $('#param-two').val(), $('#param-three').val()] 
     var output = choose(chosenParams[0])
-    for (let x = 1; x < 3; x++) output += `&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;${choose(chosenParams[x])}`;
+
+    output += `&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;${choose(chosenParams[1])}`
+    output += `&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;${choose(chosenParams[2])}`
 
     $('.output-container').html(output)
     document.querySelector('.output-container').style.opacity = 1
