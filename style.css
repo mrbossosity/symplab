@@ -12,6 +12,7 @@ body {
 }
 
 select {
+    max-width: 30%;
     font-family: 'Goldman';
     font-size: 1.2em;
     border: 1px solid darkgray;
@@ -49,6 +50,11 @@ select {
     display: flex;
     flex-direction: column;
     gap: 1em;
+}
+
+.params-row {
+    display: flex;
+    justify-content: space-between;
 }
 
 .plus {
@@ -95,4 +101,27 @@ select {
     bottom: 1em; left: 1em;
     color: rgba(230, 230, 235, 0.7);
     text-align: center;
+    font-size: 1em;
+}
+
+@media only screen and (max-width: 700px) {
+    select {
+        font-size: 1em;
+    }
+    
+    .background {
+        font-size: 4em;
+    }
+    
+    .go-button {
+        font-size: 1.05em;
+    }
+        
+    .output-container {
+        font-size: 2em;
+    }
+
+    .info-footer {
+        font-size: 0.9em;
+    }
 }
