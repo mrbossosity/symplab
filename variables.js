@@ -4,13 +4,15 @@ var restrictions = [
     'On Knees',
     'On Back',
     'On Elbows',
+    'On Stomach',
     'Standing',
     'Direction Change',
     'Travel Forward/Back',
     'Travel Sideways',
     'Level Change',
-    'Add Threading',
-    'Atomic-Style/Rotation'
+    'Threading',
+    'Atomic Style',
+    'With Stab'
 ]
 
 var textures = [
@@ -66,12 +68,13 @@ var moves = [
     '6 Step',
     '12 Step',
     'CC',
-    'Backrock',
+    'Backrock CC',
     'Zulu',
     'Monkey Swing',
     'Russian Step',
     'Hook',
     'Sweep',
+    'Pretzel',
     'Figure 4',
     'Kickout',
     'One Leg Kickout',
@@ -86,7 +89,9 @@ var moves = [
     'Corkscrew',
     'Hip Twist',
     'Side Step',
-    '2 Step (Toprock)'
+    'Cross Step',
+    'Shuffle',
+    'Reverse 1 Step'
 ]
 
 const params = [restrictions, textures, shapes, moves]
